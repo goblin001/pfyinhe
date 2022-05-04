@@ -52,7 +52,7 @@ Install() {
 		echo -e " ${Tip} 正在安装tinyPortMapper..."
 		wget https://github.com/wangyu-/tinyPortMapper/releases/download/20200818.0/tinymapper_binaries.tar.gz && tar -xzf tinymapper_binaries.tar.gz && mv -f /root/tinymapper_amd64 /usr/bin/tinymapper && rm -f tinymapper* && chmod +x /usr/bin/tinymapper
 		echo -e " ${Tip} 正在安装goproxy..."
-		wget https://github.com/snail007/goproxy/releases/download/v10.5/proxy-linux-amd64.tar.gz && tar -xzf proxy-linux-amd64.tar.gz proxy && mv -f /root/proxy /usr/bin/goproxy  && rm -f proxy-linux* && chmod +x /usr/bin/goproxy
+		wget https://github.com/snail007/goproxy/releases/proxy-linux-amd64.tar.gz && tar -xzf proxy-linux-amd64.tar.gz proxy && mv -f /root/proxy /usr/bin/goproxy  && rm -f proxy-linux* && chmod +x /usr/bin/goproxy
 		echo -e " ${Tip} 禁用Firewalld..."
 		service firewalld stop
 		systemctl disable firewalld
